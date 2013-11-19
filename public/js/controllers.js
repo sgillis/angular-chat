@@ -24,6 +24,7 @@ angular.module('myApp.controllers', []).
             user: 'chatroom',
             message: 'User ' + data.name + ' has joined.'
         })
+        $scope.users.push(data.name)
     });
 
     socket.on('user:left', function(data) {
