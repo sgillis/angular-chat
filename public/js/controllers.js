@@ -52,7 +52,7 @@ angular.module('myApp.controllers', []).
 
         $scope.messages.push({
             user: 'chatroom',
-            text: 'User ' + oldName + ' is now known as ' + newName + '.'
+            message: 'User ' + oldName + ' is now known as ' + newName + '.'
         });
     };
 

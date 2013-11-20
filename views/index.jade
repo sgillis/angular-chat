@@ -22,6 +22,10 @@ block body
     .clr
       h3 Change your name
       p Your current user name is {{ name }}
+      form(ng-submit='changeName()')
+        | Change your name:
+        input(ng-model='newName')
+        input(type='submit', value='Send')
 
   script(src='/socket.io/socket.io.js')
   script(src='bower_components/angular/angular.js')
